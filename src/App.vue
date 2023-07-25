@@ -5,7 +5,19 @@
     <router-link :to="{ name: 'job' }">Job</router-link>
   </nav>
   <router-view />
+  <button @click="redirect">Redirect</button>
 </template>
+
+<script>
+  export default {
+    methods:{
+      redirect() {
+        this.$router.push('/about')
+      }
+    }
+  }
+</script>
+
 
 <style>
 #app {
