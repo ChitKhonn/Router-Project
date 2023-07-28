@@ -22,13 +22,14 @@ const routes = [
     name: 'job',
     component:JobView
   },
+  //Job Details
   {
     path: '/jobdetails/:id',
     name: 'jobdetails',
     component:JobDetails,
     props:true
   },
-  //Catch All
+  //Catch All 
   {
     path:'/:catchAll(.*)',
     component:NotFound
